@@ -1,3 +1,3 @@
-# Controly
+# File Data
 
-A collection of abstract classes to handle UI management on data-driven systems.
+A simple package that introduces file data entities, which serve as reference objects to non-serialized objects in the Unity editor.
