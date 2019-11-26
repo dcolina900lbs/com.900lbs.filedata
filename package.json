@@ -1,0 +1,12 @@
+{
+  "name": "com.900lbs.filedata",
+  "version": "1.0.0",
+  "displayName": "File Data",
+  "description": "Contains file data entities, which serve as reference objects to non-serialized objects in the Unity editor.",
+  "unity": "2018.3",
+  "author": {
+    "name": "Daniel Colina",
+    "email": "dcolina@900lbs.com"
+  },
+  "hideInEditor": false
+}

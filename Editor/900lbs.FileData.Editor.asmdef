@@ -1,0 +1,16 @@
+{
+    "name": "900lbs.FileData.Editor",
+    "references": [
+        "GUID:520dd65c81dced9479f05a63630a8930"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
