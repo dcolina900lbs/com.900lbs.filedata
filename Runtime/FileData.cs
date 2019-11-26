@@ -28,20 +28,21 @@ public class FileData : ScriptableObject
     /// <summary>
     /// Instance ID.
     /// </summary>
-    public string GUID { get; private set; } = string.Empty;
+    public string GUID => guid;
     #endregion
 
     #region Serialized Private Variables
     [SerializeField] private string displayName = string.Empty;
     [SerializeField] private string path = string.Empty;
+    [SerializeField] private string guid = string.Empty;
     #endregion
 
     #region Public Methods
-    public void Init(string displayName, string path, string GUID)
+    public void Init(string displayName, string path, string guid)
     {
         this.displayName = displayName;
         this.path = path;
-        this.GUID = GUID;
+        this.guid = guid;
     }
 
     #if UNITY_EDITOR
@@ -51,7 +52,8 @@ public class FileData : ScriptableObject
     public void RefreshFileReference()
 	{
 		// Get the file path relative to streaming assets
-		string tempPath = UnityEditor.AssetDatabase.GUIDToAssetPath(GUID);
+		string tempPath = AssetDatabase.GUIDToAssetPath(GUID);
+        Debug.Log(tempPath);
 		int indexOfStreamingAssets = tempPath.IndexOf ("Assets/StreamingAssets");
 		if (indexOfStreamingAssets != -1)
 		{
