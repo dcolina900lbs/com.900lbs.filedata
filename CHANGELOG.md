@@ -7,12 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.1] - 2019-12-19
-
-### Changed
-
-- File data objects now track their full path as opposed to assuming the asset is inside of StreamingAssets.
-
 ## [1.0.0] - 2019-11-26
 
 ### Added
