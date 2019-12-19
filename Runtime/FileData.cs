@@ -53,19 +53,11 @@ public class FileData : ScriptableObject
 	{
 		// Get the file path relative to streaming assets
 		string tempPath = AssetDatabase.GUIDToAssetPath(GUID);
-		int indexOfStreamingAssets = tempPath.IndexOf ("Assets/StreamingAssets");
-		if (indexOfStreamingAssets != -1)
-		{
-			tempPath = tempPath.Remove (0, indexOfStreamingAssets + 22);
-			if (tempPath[0] != '/')
-				tempPath.Insert(0, "/");
-		}
 
 		if (string.IsNullOrEmpty(tempPath))
 		{
 			Debug.LogWarning("Lost file path: " + path, this);
 		}
-
 		// If the filepath is new, update it and save the asset
 		if (path != tempPath)
 		{
