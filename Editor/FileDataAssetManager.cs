@@ -1,6 +1,5 @@
 ﻿using UnityEditor;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 /// <summary>
@@ -110,7 +109,7 @@ public class FileDataAssetManager : AssetPostprocessor
         {
             string assetPath = AssetDatabase.GUIDToAssetPath(currentlySelectedObjects[i]);
             Object currentlySelectedObject = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
-            if (!assetPath.Contains("Assets/StreamingAssets"))
+            if (!assetPath.Contains("Assets/StreamingAssets/"))
                 return false;
         }
         return true;

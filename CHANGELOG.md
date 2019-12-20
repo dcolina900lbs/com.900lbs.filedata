@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-12-20
+
+### Changed
+
+- Updated FileData to have two path variables: AbsolutePath and RelativePath to better ease in accessing path data through external scripts. 
+
 ## [1.0.0] - 2019-11-26
 
 ### Added
