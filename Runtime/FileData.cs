@@ -59,8 +59,6 @@ public class FileData : ScriptableObject
 		if (indexOfStreamingAssets != -1)
 		{
 			tempPath = tempPath.Remove (0, indexOfStreamingAssets + 22);
-			//if (tempPath[0] != '/')
-			//	tempPath.Insert(0, "/");
 		}
 
 		if (string.IsNullOrEmpty(tempPath))
